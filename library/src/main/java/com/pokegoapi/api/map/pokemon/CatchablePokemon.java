@@ -513,6 +513,11 @@ public class CatchablePokemon implements MapPoint {
 				Log.wtf(TAG, "Proto:" + result);
 				break;
 			}
+
+			if (result.getStatus() == CatchStatus.CATCH_ERROR) {
+				break;
+			}
+
 			numThrows++;
 		}
 		while (amount < 0 || numThrows < amount);
