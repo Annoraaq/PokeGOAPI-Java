@@ -51,6 +51,8 @@ public class Gym implements MapPoint {
 		this.details = null;
 	}
 
+	// test comment
+
 	public String getId() {
 		return proto.getId();
 	}
